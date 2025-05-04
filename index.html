@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATLAB-style Neural Network Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Neural Network Tools</h2>
+            <div class="toolbar">
+                <select id="networkType" class="network-select" onchange="changeNetworkType(this.value)">
+                    <option value="feedforward">Feedforward</option>
+                    <option value="rbf">RBF</option>
+                    <option value="cascade">Cascade-forward</option>
+                </select>
+                <button onclick="addLayer()">Add Layer</button>
+                <button onclick="simulateTraining()">Train Network</button>
+            </div>
+            <div class="layer-visualization">
+                <h3>Network Architecture</h3>
+                <div id="layer-list"></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <canvas id="networkCanvas"></canvas>
+            <div id="trainingProgress">
+                <div id="progressBar"></div>
+                <span id="progressText">0%</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

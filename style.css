@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar h2 {
+    color: #ecf0f1;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 10px;
+}
+
+.toolbar button, .network-select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+.network-select {
+    background: #2c3e50;
+    border: 1px solid #34495e;
+}
+
+.toolbar button:hover {
+    background: #2980b9;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #ffffff;
+}
+
+#networkCanvas {
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    background: white;
+}
+
+#trainingProgress {
+    margin-top: 20px;
+    background: #ecf0f1;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#progressBar {
+    height: 20px;
+    background: #3498db;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#progressText {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    color: #2c3e50;
+}
+
+.layer-visualization {
+    margin-top: 20px;
+}
+
+.layer-visualization h3 {
+    color: #bdc3c7;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
